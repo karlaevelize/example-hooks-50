@@ -29,7 +29,7 @@ export default function HogwartsHouses(){
   const [houses, setHouses] = useState(data)
 
   const toggle = () => {
-    houses.length > 2 ? setHouses([]) : setHouses(data)
+    houses.length > 1 ? setHouses([]) : setHouses(data)
   }
 
   return (
