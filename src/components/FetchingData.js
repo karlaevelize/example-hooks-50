@@ -29,6 +29,8 @@ export default function FetchingData(){
     fetchData()
   }, [])
 
+  console.log("hello") //added the console.log so you can see the flow
+
   return (
     <div>
       {!catFacts ? "Loading" : catFacts.map(fact => {
