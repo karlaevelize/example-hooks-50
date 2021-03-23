@@ -28,9 +28,13 @@ export default function HogwartsHouses(){
 
   const [houses, setHouses] = useState(data)
 
+  const toggle = () => {
+    houses.length > 2 ? setHouses([]) : setHouses(data)
+  }
+
   return (
     <div>
-      <button onClick={() => setHouses([])}>Clear</button>
+      <button onClick={toggle}>Clear</button>
       {houses.map(house => {
         return (
           <div key={house.id}>
